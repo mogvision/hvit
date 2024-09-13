@@ -51,9 +51,9 @@ python src/scripts/main.py --mode train \
     --precision bf16
 ```
 
-# Note: You can use --num_gpus -1 to utilize all available GPUs
+*Note: You can use --num_gpus -1 to utilize all available GPUs*
 
-# Resume Training
+### Resume Training
 To resume training from a checkpoint:
 
 ```
@@ -81,7 +81,7 @@ python src/scripts/main.py --mode inference \
     --precision bf16
 ```
 
-# Note: Adjust the checkpoint_path to point to your trained model
+*Note: Adjust the checkpoint_path to point to your trained model*
 
 
 
