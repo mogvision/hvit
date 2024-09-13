@@ -1,0 +1,32 @@
+model_type: HViT
+backbone_net: fpn
+fpn_channels: 128
+start_channels: 32
+out_fmaps: 
+  - P4
+  - P3
+  - P2
+  - P1
+scale_level_df: P1
+upsample_df: true
+upsample_scale_factor: 2
+patch_size: 2
+in_channels: 1
+data_size: 
+  - 40  # 160
+  - 48  # 192
+  - 56  # 224
+bias: true
+norm_type: instance
+cuda: 0
+kernel_size: 3
+depths: 1
+mlp_ratio: 2
+num_heads: 32
+drop_path_rate: 0.0
+qkv_bias: true
+drop_rate: 0.0
+attn_drop_rate: 0.0
+use_seg_loss: false
+use_seg_proxy_loss: false
+num_organs: -1

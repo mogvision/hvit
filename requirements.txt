@@ -1,0 +1,19 @@
+# Requirements for H-Vit model
+# conda create -n hvit python=3.10 -y
+# conda activate hvit
+# pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
+# Install with: pip install -r requirements.txt
+
+# H-Vit specific dependencies
+einops
+timm
+
+#training
+lightning
+wandb
+
+# dataloader
+monai
+
+# Version control
+gitpython
